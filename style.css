@@ -1,0 +1,55 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+:root{
+    --color1: #FCF9CE;
+    --color2: #c2b844;
+    --color3: #dc8a6b;
+    --color4: #a53a60;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    width: 500px;
+    height: 460px;
+    position: relative;
+}
+.a1{
+    position: absolute;
+    width: 80px;
+    height: 120px;
+    background-color: var(--color1);
+    clip-path: polygon(51% 0, 100% 0%, 51% 100%, 0% 100%);
+}
+.a2{
+    position: absolute;
+    width: 80px;
+    height: 120px;
+    background-color: var(--color2);
+    clip-path: polygon(51% 0, 0 0, 51% 100%, 100% 100%);
+    left: 40px;
+    z-index: -1;
+}
+.a3{
+    position: absolute;
+    width: 80px;
+    height: 120px;
+    background-color: var(--color3);
+    clip-path: polygon(43% 56%, 81% 57%, 43% 100%, 0% 100%);
+    left: 6px;
+    z-index: 4;
+}
+.a4{
+    position: absolute;
+    width: 80px;
+    height: 120px;
+    background-color: var(--color4);
+    clip-path: polygon(43% 56%, 0 56%, 43% 100%, 84% 100%);
+    left: 46px;
+    z-index: 2;
+}
+  
